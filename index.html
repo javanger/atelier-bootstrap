@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+</head>
+
+
+
+<body>
+    <div class="container-fluid">
+        <header>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-9"></div>
+                    <div class="col-3">
+                        <button>Ajouter un nouveau collaborateur</button>
+                    </div>
+                </div>
+
+            </div>
+            <h1>Les Collaborateurs</h1>
+
+        </header>
+
+        <div class="container-fluid">
+            <section>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <form action="post">
+                                <p>
+                                    <label for="rechercher">Rechercher un nom ou un prénom qui commence par :
+                                        <input type="text" name="rechercher" id="rechercher">
+                                        <input type="button" value="Rechercher">
+                                    </label>
+
+                                </p>
+
+                            </form>
+                        </div>
+                        <div class="col-4">
+
+                            <input type="checkbox" name="collabo" id="collabo">
+                            <label for="collabo"></label>Voir les Collaborateurs désactivés
+
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <form class="row" action="post">
+
+                            <label for="collabo"></label>Filtrer par département :
+
+                            <select name="filtre" id="filtre">
+                                <option value="Tous">Tous</option>
+                                <option value="Comptabilité">Comptabilité</option>
+                                <option value="Ressources Humaines">Ressources Humaines</option>
+                                <option value="Informatique">Informatique</option>
+                            </select>
+                            <!--
+                            <ul class="list-group">
+                                <li class="list-group-item active">Comptabilité</li>
+                                <li class="list-group-item">Ressources Humaines</li>
+                                <li class="list-group-item">Informatique</li>
+
+                            </ul>
+                        -->
+
+                        </form>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Nom Prénom</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Light card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Nom Prénom</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Light card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Nom Prénom</div>
+                                <div class="card-body">
+                                    <div class="col">
+                                        <img src="user.png" class="img-fluid max-width: 6rem" alt="photo">
+
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text">
+                                            Fonction
+                                            <br> département
+                                            <br> Email
+                                            <br> Telephone
+                                            <br>
+
+                                        </p>
+
+                                        <p>
+                                            <input type="button" value="Editer">
+                                        </p>
+
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    </section>
+    </div>
+    <footer class="row">
+
+        <div class="col-lg-12">
+
+
+
+        </div>
+
+    </footer>
+
+
+
+    </div>
+
+
+</body>
+
+
+</html>
