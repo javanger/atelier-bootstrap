@@ -28,8 +28,10 @@
       </div>
     </nav>
     <div class="container-fluid">
-      <div class="offset-10">
-        <a href='index.html'><button type="submit" class="btn btn-primary">Liste des collaborateurs</button></a>
+      <div class="row justify-content-end mt-2 p-2">
+        <div class=".col-auto">
+          <a href='index.html'><button type="submit" class="btn btn-primary">Liste des collaborateurs</button></a>
+        </div>
       </div>
       <header>
         <h1>Nouveau Collaborateur</h1>
@@ -39,28 +41,72 @@
           <div class="form-group col-md-6">
             <label for="inputNom">Nom</label>
             <input type="text" class="form-control" id="inputNom" placeholder="Nom">
+            <div class="invalid-feedback">
+              Le nom est obligatoire.
+            </div>
           </div>
           <div class="form-group col-md-6">
             <label for="inputPrenom">Prénom</label>
             <input type="text" class="form-control" id="inputPrenom" placeholder="Prénom">
+            <div class="invalid-feedback">
+              Le prénom est obligatoire.
+            </div>
           </div>
         </div>
         <div class="form-group">
           <label for="inputNaissance">Date de naissance</label>
           <input type="date" class="form-control" id="inputNaissance" placeholder="">
+          <div class="invalid-feedback">
+            la date de naissance est obligatoire.
+          </div>
         </div>
         <div class="form-group">
           <label for="inputAddresse">Adresse</label>
           <input type="text" class="form-control" id="inputAddresse" placeholder="">
+          <div class="invalid-feedback">
+            L'adresse est obligatoire.
+          </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputNumSociale">Numéro de sécurité sociale</label>
             <input type="number" class="form-control" id="inputNumSociale">
+            <div class="invalid-feedback">
+              Le numéro de sécurité sociale est obligatoire.
+            </div>
           </div>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Créer</button>
+      <button type="button" class="btn btn-primary p-2" data-toggle="modal" data-target="#exampleModal">
+        Créer
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Création d'un nouveau collaborateur</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Vous êtes sur le point de creer un nouveau collaborateur</p>
+              <p>Nom :</p>
+              <p>Prénom :</p>
+              <p>Date de naissance :</p>
+              <p>Adresse :</p>
+              <p>Numéro de Sécurité sociale :</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+              <button type="button" class="btn btn-success" data-dismiss="modal">Valider</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </form>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
