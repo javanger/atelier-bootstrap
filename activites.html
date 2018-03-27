@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Statistiques</title>
+    <title>Activités</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
@@ -32,10 +32,10 @@
                             <li class="nav-item">
                                 <a class="nav-link " href="index.html">Collaborateurs</a>
                             </li>
-                            <li class="nav-item active">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="statistiques.html">Statistiques</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="activites.html">Activités</a>
                             </li>
                         </ul>
@@ -47,19 +47,89 @@
 
 
         <div class="container-fluid">
-            <div class="row">
 
-                <div class="col-md-3 ml-auto">
-                    <a class="btn btn-dark" href="creer-collab.html">Ajouter un nouveau collaborateur</a>
-                </div>
-            </div>
 
 
 
             <div class="row ">
-                <div class="col-4 ">
-                    <h2>Statistiques</h2>
+                <div class="col-10">
                     <br>
+                    <h2 class="col-10">Activités depuis le démarrage de l'application</h2>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr class="table-dark">
+                                        <th class="col-4">Date/Heure</th>
+                                        <th class="col-8">Libellé</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table">
+                                        <td>10/10/2017 10:50:52</td>
+                                        <td>Création d'un nouveau collaborateur - matricule xxxxxxx
+                                            <a href="creer-collab.html">(lien)</a>
+                                        </td>
+
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td>10/05/2017 10:50:52</td>
+                                        <td>Modification d'un collaborateur - matricule xxxxxxx
+                                            <a href="editer-collab.html">(lien)</a>
+                                        </td>
+
+                                    </tr>
+                                    <tr class="table">
+                                        <td></td>
+                                        <td></td>
+
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td></td>
+                                        <td></td>
+
+                                    </tr>
+                                </tbody>
+                                <tr class="table">
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr class="table-active">
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                </tbody>
+                                <tr class="table">
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr class="table-active">
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                </tbody>
+                                <tr class="table">
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr class="table-active">
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
@@ -68,53 +138,7 @@
 
 
 
-        <div class="container">
-            <div class="row">
-                <table class="table table-striped">
-                    <thead>
-                        <tr class="table-dark">
-                            <th class="col-4">chemin</th>
-                            <th class="col-4">Nombre de visiteur</th>
-                            <th class="col-1">Min (ms)</th>
-                            <th class="col-1">Min (ms)</th>
-                            <th class="col-2">Moyenne (ms)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="table">
-                            <td>/collaborateur/editer</td>
-                            <td>500</td>
-                            <td>10</td>
-                            <td>1000</td>
-                            <td>500</td>
-                        </tr>
-                        <tr class="table-active">
-                            <td>/collaborateur/lister</td>
-                            <td>125</td>
-                            <td>5</td>
-                            <td>600</td>
-                            <td>90</td>
-                        </tr>
-                        <tr class="table">
-                            <td>/collaborateur/nouveau</td>
-                            <td>200</td>
-                            <td>2</td>
-                            <td>58</td>
-                            <td>789</td>
-                        </tr>
-                        <tr class="table-active">
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
 
-            </div>
-
-        </div>
 
 
 
