@@ -1,44 +1,43 @@
+
+
+$('#numero').change(function(){
+  $('#numModal').html($(this).val());
+})
+$('#nom').change(function(){
+  $('#nomModal').html($(this).val());
+})
+$('#date').change(function(){
+  $('#dateModal').html($(this).val());
+})
+$('#prenom').change(function(){
+  $('#prenomModal').html($(this).val());
+})
+$('#adresse').change(function(){
+  $('#adresseModal').html($(this).val());
+})
+
 var url = location.search;
 if (url == '?errors') {
 var lesErrors = document.querySelectorAll('input');
 lesErrors.forEach(param => {param.classList.add('is-invalid')});
 }
-form.addEventListener('submit', function (event) {
-  if (form.checkValidity() === false) {
-        event.preventDefault();
-            event.stopPropagation();
-       }
-        form.classList.add('was-validated');
-  }, false);
+
+function inserer(){
+var numero=document.getElementById("numero").value;
+var nom=document.getElementById("nom").value;
+var prenom=document.getElementById("prenom").value;
+var date=document.getElementById("date").value;
+var adresse=document.getElementById("adresse").value;
+var value = JSON.stringify({nom: nom, numero: numero, prenom: prenom, date: date, adresse: adresse});
+localStorage.setItem("collaborateur", value);
+
+var valeur = localStorage.getItem("collaborateur");
+var collaborateur = JSON.parse(valeur);
 
 
 
-  var Nom {
-    localStorage.setItem("Nom");
-    document.getElementById('Nom').value = Nom;
-  }
+document.querySelector("#buttoncreer").addEventListener('click', function(){
+  $('#myModal').modal();
+});
 
-  function save{
-sessionStorage.setItem('NOM', 'value')
-localStorage.setItem('Nom', JSON.stringify(Nom));
-}
-
-
-
-
-
-
-
-
-
-
-function save() {
-localStorage.setItem("Nom", "Nom");
-localStorage.setItem("Prénom", "Prénom");
-localStorage.setItem("Adresse", "Adresse");
-localStorage.setItem("Date", "Date");
-localStorage.setItem("numéro", "numéro");
-
-
-alert( "Nom = " + localStorage.getItem("Nom"));
 }
