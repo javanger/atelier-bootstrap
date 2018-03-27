@@ -1,30 +1,56 @@
-/// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-    'use strict';
-    window.addEventListener('load', function () {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function (form) {
-            form.addEventListener('submit', function (event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    }, false);
-})();
-
 var url = location.search;
 if (url === '?errors') {
     var errors = document.querySelectorAll('input, textarea');
     errors.forEach(param => { param.classList.add('is-invalid') });
 }
 
-$(document).ready(function () {
-    $("#actionmodal").click(function () {
-        $("#exampleModal").modal();
+function openModal() {
+
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function (form) {
+        if (form.checkValidity() === false) {
+
+            event.preventDefault();
+            event.stopPropagation();
+
+        } else {
+
+            remplirModal(document.getElementById("nomInput").value,
+                document.getElementById("prenomInput").value,
+                document.getElementById("adresseInput").value,
+                document.getElementById("dateInput").value,
+                document.getElementById("numSecuInput").value);
+
+            $("#exampleModal").modal();
+        }
+
+        form.classList.add('was-validated');
+
     });
-});
+
+}
+
+function storeData() {
+
+    var nom = document.getElementById("nomInput").value;
+    var prenom = document.getElementById("prenomInput").value
+    var adresse = document.getElementById("adresseInput").value
+    var date = document.getElementById("dateInput").valu
+    var numSecu = document.getElementById("numSecuInput").value
+
+    var value = JSON.stringify({nom : nom, prenom : prenom, adresse : adresse, date : date, numSecu : numSecu});
+
+    localStorage.setItem(numSecu, value);
+
+}
+
+function remplirModal(nom, prenom, adresse, date, numSecu) {
+
+    document.getElementById("nom").innerHTML = "Nom : " + nom;
+    document.getElementById("prenom").innerHTML = "Prénom : " + prenom;
+    document.getElementById("adresse").innerHTML = "Adresse : " + adresse;
+    document.getElementById("date").innerHTML = "Date de naissance : " + date;
+    document.getElementById("numSecurite").innerHTML = "Numéro de sécurité sociale : " + numSecu;
+
+}
