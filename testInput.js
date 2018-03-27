@@ -4,9 +4,15 @@ document.querySelector('#creerCollaboratuer').addEventListener('click', function
         document.querySelector('#inputNumeroSecuSocial').value == ""){
     url = location.search + '?errors'
     if (url == '?errors') {
-      var lesErrors = document.querySelectorAll('input');
+      var lesErrors = document.querySelectorAll("input[type='text']");
       lesErrors.forEach(param => {param.classList.add('is-invalid')});
-      var lesErrors = document.querySelectorAll('textarea');
+      lesErrors = document.querySelectorAll("input[type='date']");
+      lesErrors.forEach(param => {param.classList.add('is-invalid')});
+      lesErrors = document.querySelectorAll("input[type='tel']");
+      lesErrors.forEach(param => {param.classList.add('is-invalid')});
+      lesErrors = document.querySelectorAll('textarea');
+      lesErrors.forEach(param => {param.classList.add('is-invalid')});
+      lesErrors = document.querySelectorAll('select');
       lesErrors.forEach(param => {param.classList.add('is-invalid')});
     }
   }
@@ -14,8 +20,14 @@ document.querySelector('#creerCollaboratuer').addEventListener('click', function
 
 var url = location.search;
 if (url == '?errors') {
-  var lesErrors = document.querySelectorAll('input');
-  lesErrors.forEach(param => {param.classList.add('is-invalid')});
-  var lesErrors = document.querySelectorAll('textarea');
-  lesErrors.forEach(param => {param.classList.add('is-invalid')});
+      var lesErrors = document.querySelectorAll("input[type='text']");
+      lesErrors.forEach(param => {param.classList.add('is-invalid')});
+      lesErrors = document.querySelectorAll("input[type='date']");
+      lesErrors.forEach(param => {param.classList.add('is-invalid')});
+      lesErrors = document.querySelectorAll("input[type='tel']");
+      lesErrors.forEach(param => {param.classList.add('is-invalid')});
+      lesErrors = document.querySelectorAll('textarea');
+      lesErrors.forEach(param => {param.classList.add('is-invalid')});
+      lesErrors = document.querySelectorAll('select');
+      lesErrors.forEach(param => {param.classList.add('is-invalid')});
 }
