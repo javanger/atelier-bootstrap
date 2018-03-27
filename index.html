@@ -7,10 +7,10 @@
     <title>SPG</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/lumen/bootstrap.min.css" rel="stylesheet" integrity="sha384-0LGTKb8NPx8fBKaojW3qF+Qo2Yhhs/mBrVHMYjPV8V/o4ZAmZ1cpGI2OeQab16T2" crossorigin="anonymous">
   </head>
-  <body>
+  <body onload='getDonnee()'>
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="logo.png" class="rounded"></a>
+        <a class="navbar-brand" href="index.html"><img src="logo.png" class="rounded"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -73,82 +73,12 @@
         </div>
       </section>
       <section>
-        <div class="row">
-          <div class="col-lg-4 col-sm-12 col-md-6">
-            <h4>NOM Prénom</h4>
-            <div class="media">
-              <img class="align-self-start mr-3" src="logo.jpg" alt="Generic placeholder image">
-              <div class="media-body">
-                <label for="">Fonction : </label>PDG<br/>
-                <label for="">Département : </label>Ressources<br/>
-                <label for="">Email : </label><br/>
-                <label for="">Téléphone : </label><br/>
-                <a href="editer-collab.html"><button type="button" class="btn btn-primary">Éditer</button></a>
-              </div>
-            </div>
-            <h4>NOM Prénom</h4>
-            <div class="media">
-              <img class="align-self-start mr-3" src="logo.jpg" alt="Generic placeholder image">
-              <div class="media-body">
-                <label for="">Fonction : </label>Comptable<br/>
-                <label for="">Département : </label>Comptabilité<br/>
-                <label for="">Email : </label><br/>
-                <label for="">Téléphone : </label><br/>
-                <a href="editer-collab.html"><button type="button" class="btn btn-primary">Éditer</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 col-md-6">
-            <h4>NOM Prénom</h4>
-            <div class="media">
-              <img class="align-self-start mr-3" src="logo.jpg" alt="Generic placeholder image">
-              <div class="media-body">
-                <label for="">Fonction : </label>Sécretaire<br/>
-                <label for="">Département : </label>Comptabilité<br/>
-                <label for="">Email : </label><br/>
-                <label for="">Téléphone : </label><br/>
-                <a href="editer-collab.html"><button type="button" class="btn btn-primary">Éditer</button></a>
-              </div>
-            </div>
-            <h4>NOM Prénom</h4>
-            <div class="media">
-              <img class="align-self-start mr-3" src="logo.jpg" alt="Generic placeholder image">
-              <div class="media-body">
-                <label for="">Fonction : </label>Technicien réseaux<br/>
-                <label for="">Département : </label>Informatique<br/>
-                <label for="">Email : </label><br/>
-                <label for="">Téléphone : </label><br/>
-                <a href="editer-collab.html"><button type="button" class="btn btn-primary">Éditer</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 col-md-6">
-            <h4>NOM Prénom</h4>
-            <div class="media">
-              <img class="align-self-start mr-3" src="logo.jpg" alt="Generic placeholder image">
-              <div class="media-body">
-                <label for="">Fonction : </label>Webmaster<br/>
-                <label for="">Département : </label>Informatique<br/>
-                <label for="">Email : </label><br/>
-                <label for="">Téléphone : </label><br/>
-                <a href="editer-collab.html"><button type="button" class="btn btn-primary">Éditer</button></a>
-              </div>
-            </div>
-            <h4>NOM Prénom</h4>
-            <div class="media">
-              <img class="align-self-start mr-3" src="logo.jpg" alt="Generic placeholder image">
-              <div class="media-body">
-                <label for="">Fonction : </label>Directeur<br/>
-                <label for="">Département : </label>Ressources<br/>
-                <label for="">Email : </label><br/>
-                <label for="">Téléphone : </label><br/>
-                <a href="editer-collab.html"><button type="button" class="btn btn-primary">Éditer</button></a>
-              </div>
-            </div>
-          </div>
+        <div class="row" id="index">
+
         </div>
       </section>
     </div>
+    <script src="dao.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
