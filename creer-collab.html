@@ -8,14 +8,37 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <title>Creer collab</title>
-
+  <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            // si l'ur est creer-collab.html?errors 
+            if (window.location.search == "?errors") {
+              form.classList.add('was-validated');
+            }
+            form.addEventListener('submit', function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">LOG</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true"
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="flase"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,22 +67,22 @@
     </div>
   </div>
   <div class="col-12 offset-2 mt-5">
-    <form>
+    <form class="needs-validation" novalidate>
       <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">Nom :</label>
+        <label for="input-nom" class="col-sm-2 col-form-label">Nom :</label>
         <div class="col-sm-4">
           <input type="text" class="form-control" id="nom" placeholder="Nom" required>
           <div class="invalid-feedback">
-            Veuillez saisir un nom correct.
+            Le nom est obligatoire.
           </div>
         </div>
       </div>
       <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">Prénom :</label>
+        <label for="input-prenom" class="col-sm-2 col-form-label">Prénom :</label>
         <div class="col-sm-4">
           <input type="text" class="form-control" id="prenom" placeholder="Prénom" required>
           <div class="invalid-feedback">
-            Veuillez saisir un prénom correct.
+            Le prénom est obligatoire.
           </div>
         </div>
       </div>
@@ -68,7 +91,7 @@
         <div class="col-sm-4">
           <input type="text" class="form-control" id="dateNaissance" placeholder="dd/mm/YYYY" required>
           <div class="invalid-feedback">
-            Veuillez saisir une date de naissance correct.
+            La date de naissance est obligatoire.
           </div>
         </div>
       </div>
@@ -77,7 +100,7 @@
         <div class="col-sm-4">
           <input type="text" class="form-control" id="adr" placeholder="N°,rue, rue ,ville , code Postal " required>
           <div class="invalid-feedback">
-            Veuillez saisir une adresse correct.
+            L"adresse est obligatoire.
           </div>
         </div>
       </div>
@@ -86,20 +109,22 @@
         <div class="col-sm-4">
           <input type="text" class="form-control" id="secu" placeholder="N° secu" required>
           <div class="invalid-feedback">
-            Veuillez saisir un numéro de sécurité sociale correct.
+            Le numéro de sécurité sociale est obligatoire.
           </div>
         </div>
       </div>
       <div class="form-group row">
         <div class="col-sm-1 offset-5 ">
-          <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Créer</button>
+          <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#exampleModal">Créer</button>
 
         </div>
       </div>
     </form>
   </div>
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  
+
+   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -125,33 +150,21 @@
       </div>
     </div>
   </div>
-  <script>
-    function() {
-      'use strict';
-      window.addEventListener('load', function () {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function (form) {
-          form.addEventListener('submit', function (event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    }) ();
-  </script>
+
+
 </body>
 <footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+
 </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+
+
+
 
 </html>
