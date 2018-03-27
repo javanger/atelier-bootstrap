@@ -47,66 +47,102 @@
         <label for="colFormLabel" class="col-sm-2 col-form-label">Nom :</label>
         <div class="col-sm-4">
           <input type="text" class="form-control" id="nom" placeholder="Nom" required>
+          <div class="invalid-feedback">
+            Veuillez saisir un nom correct.
+          </div>
         </div>
       </div>
       <div class="form-group row">
         <label for="colFormLabel" class="col-sm-2 col-form-label">Prénom :</label>
         <div class="col-sm-4">
           <input type="text" class="form-control" id="prenom" placeholder="Prénom" required>
+          <div class="invalid-feedback">
+              Veuillez saisir un prénom correct.
+            </div>
         </div>
       </div>
       <div class="form-group row">
         <label for="colFormLabel" class="col-sm-2 col-form-label">Date de naissance :</label>
         <div class="col-sm-4">
           <input type="text" class="form-control" id="dateNaissance" placeholder="dd/mm/YYYY" required>
+          <div class="invalid-feedback">
+              Veuillez saisir une date de naissance correct.
+            </div>
         </div>
       </div>
       <div class="form-group row">
         <label for="colFormLabel" class="col-sm-2 col-form-label">Adresse :</label>
         <div class="col-sm-4">
           <input type="text" class="form-control" id="adr" placeholder="N°,rue, rue ,ville , code Postal " required>
+          <div class="invalid-feedback">
+              Veuillez saisir une adresse correct.
+            </div>
         </div>
       </div>
       <div class="form-group row">
         <label for="colFormLabel" class="col-sm-2 col-form-label">Numéro de sécurité sociale :</label>
         <div class="col-sm-4">
           <input type="text" class="form-control" id="secu" placeholder="N° secu" required>
+          <div class="invalid-feedback">
+              Veuillez saisir un numéro de sécurité sociale correct.
+            </div>
         </div>
       </div>
       <div class="form-group row">
         <div class="col-sm-1 offset-5 ">
           <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Créer</button>
-          
+
         </div>
       </div>
     </form>
   </div>
 
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"> Création d'un collaborateur</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-          <p>Vous ètes sur le point de créer un nouveau collaborateur : <br/>
-            Nom  : <br/>
-            Prénom  :<br/>
-            Date de naissance  :<br/>
-            Adresse  :<br/>
-            Numéro de sécurité sociale  :<br/></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-            <button type="button" class="btn btn-primary"> Confirmer</button>
-          </div>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> Création d'un collaborateur</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Vous ètes sur le point de créer un nouveau collaborateur :
+            <br/> Nom :
+            <br/> Prénom :
+            <br/> Date de naissance :
+            <br/> Adresse :
+            <br/> Numéro de sécurité sociale :
+            <br/>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-primary"> Confirmer</button>
         </div>
       </div>
     </div>
+  </div>
+<script>
 
+  function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>
 </body>
 <footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
