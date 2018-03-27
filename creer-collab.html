@@ -33,7 +33,7 @@
         </div>
       </nav>
       <h1>Nouveau Collaborateur</h1>
-
+  <div class="col">
    <div class="row">
           <form>
 			<div class="form-group row">
@@ -48,7 +48,7 @@
 			<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Prénom</label>
 				<div class="col-sm-10">
-                <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required>
+                <input type="text" class="form-control" id="Prenom" aria-describedby="inputGroupPrepend3" required>
 						<div class="invalid-feedback">
 						Le Prénom est obligatoire.
 						</div>
@@ -57,7 +57,7 @@
 			<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Adresse</label>
 				<div class="col-sm-10">
-                <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required>
+                <input type="text" class="form-control" id="Adresse" aria-describedby="inputGroupPrepend3" required>
             <div class="invalid-feedback">
 						L'adresse est obligatoire.
 						</div>
@@ -66,7 +66,7 @@
 			<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Date de naissance</label>
 				<div class="col-sm-10">
-                <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required>
+                <input type="date" class="form-control" id="Date" aria-describedby="inputGroupPrepend3" required>
 						<div class="invalid-feedback">
 						La date de naissance est obligatoire.
 						</div>
@@ -75,11 +75,12 @@
 			<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Numéro de sécurité sociale</label>
 				<div class="col-sm-10">
-                <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required>
+                <input type="text" class="form-control" id="numéro" aria-describedby="inputGroupPrepend3" required>
 						<div class="invalid-feedback">
 						Le numéro de sécurité sociale est obligatoire.
 						</div>
 				</div>
+          </div>
             <div class="form-group">
 			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
                 Créer
@@ -104,8 +105,8 @@
                                     Nom<asp:TextBox ID="Nom" runat="server" placeholder="Nom" class="form-control"></asp:TextBox><br />
                                     Prénom<asp:TextBox ID="TextBox2" runat="server" placeholder="Prénom" class="form-control"></asp:TextBox><br />
                                     Date de naissance<asp:TextBox ID="TextBox3" runat="server" placeholder="Adresse" class="form-control"></asp:TextBox><br />
-                                    Adresse<asp:TextBox ID="TextBox3" runat="server" placeholder="Date de naissance" class="form-control"></asp:TextBox><br />
-									Numéro de sécurité sociale<asp:TextBox ID="TextBox3" runat="server" placeholder="Numéro de sécurité sociale" class="form-control"></asp:TextBox><br />
+                                    Adresse<asp:TextBox ID="TextBox3" runat="server" placeholder="Date" class="form-control"></asp:TextBox><br />
+									Numéro de sécurité sociale<asp:TextBox ID="TextBox3" runat="server" placeholder="numéro" class="form-control"></asp:TextBox><br />
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">
