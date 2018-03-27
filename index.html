@@ -1,197 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <title>Acceuil</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="editer-collab.html">
+  <title>Acceuil</title>
 
 </head>
+
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Logo</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Collaborateurs <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Statistiques</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Activités</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </nav>      
-             <div class="container-fluid">
-                    <div class="row justify-content-end mt-2 mr-2">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">LOG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Collaborateurs
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Statistiques</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Activités</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row justify-content-end mt-2 mr-2">
 
-                            <div class=".col-auto">
-                                    <button class="btn btn-primary" type="submit">Ajouter un nouveau collaborateur</button>
-                            </div>
-                            
-                        </div>
-         <div class="row">
-            <div class="col-lg-2 offset-1">
-               <h2>
-                   Les collaborateurs
-               </h2>
-            </div>
-         </div>
+      <div class=".col-auto">
+        <a href="./creer-collab.html" class="btn btn-primary mt-3">Ajouter un nouveau collaborateur</a>
+      </div>
 
-         <div class="row">
-             <div class="col-lg-3 offset-1">
-             <p>Chercher un nom ou un prénom qui commence par la lettre :</p>
-         </div>
-            <div class="col-2">
-                    <input type="text" class="form-control" id="rch" aria-describedby="rch" placeholder="Entrez une lettre">
-            </div>
-            <button class="btn btn-primary" type="submit">Rechercher</button>
-            <div class="col-3 offset-1">
-                    <input class="form-check-input" type="checkbox"> Voir les collaborateurs désactivés
-            </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 offset-1">
+        <h2>
+          Les collaborateurs
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3 offset-1">
+        <p>Chercher un nom ou un prénom qui commence par la lettre :</p>
+      </div>
+      <div class="col-2">
+        <input type="text" class="form-control" id="rch" aria-describedby="rch" placeholder="Entrez une lettre">
+      </div>
+      <button class="btn btn-primary" type="submit">Rechercher</button>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 offset-1">
+        <p>Filtrer par département :</p>
+      </div>
+      <div class="col-2">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="true">
+            Tous
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Comptabilité</a>
+            <a class="dropdown-item" href="#">Ressources humaines</a>
+            <a class="dropdown-item" href="#">Informatique</a>
+          </div>
         </div>
-        <div class="row">
-                <div class="col-lg-3 offset-1">
-                <p>Filtrer par département :</p>
+      </div>
+    </div>
+    <div class="row">
+    </div>
+    <section>
+      <div class="row">
+        <div class="col-2 offset-1">
+          <div class="card" style="width : 22rem">
+            <h4>NOM Prénom</h4>
+            <div class="card" style="width : 22rem"></div>
+            <div class="media">
+              <img src="app_photo.jpg" alt="Generic placeholder image">
+              <div class="media-body">
+                <label for="">Fonction</label>
+                <br/>
+                <label for="">Département</label>
+                <br/>
+                <label for="">Email</label>
+                <br/>
+                <label for="">Téléphone</label>
+                <br/>
+                <button type="button" class="btn btn-primary">Éditer</button>
+              </div>
             </div>
-               <div class="col-2">
-                    <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Tous
-                    </button>
-                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Comptabilité</a>
-                          <a class="dropdown-item" href="#">Ressources humaines</a>
-                          <a class="dropdown-item" href="#">Informatique</a>
-                        </div>
-               </div>
+          </div>
         </div>
-        </div>
-        <div class="row">
+        <div class="col-2 offset-2">
+          <div class="card" style="width : 22rem">
+            <h4>NOM Prénom</h4>
+            <div class="card" style="width : 22rem"></div>
+            <div class="media">
+              <img src="app_photo.jpg" alt="Generic placeholder image">
+              <div class="media-body">
+                <label for="">Fonction</label>
+                <br/>
+                <label for="">Département</label>
+                <br/>
+                <label for="">Email</label>
+                <br/>
+                <label for="">Téléphone</label>
+                <br/>
+                <button type="button" class="btn btn-primary">Éditer</button>
+              </div>
             </div>
-            <section>
-                    <div class="row">
-                      <div class="col-2 offset-1">
-                          <div class="card" style="width : 22rem">
-                        <h4>NOM Prénom</h4>
-                        <div class="card" style="width : 22rem"></div>
-                        <div class="media">
-                          <img src="app_photo.jpg" alt="Generic placeholder image">
-                          <div class="media-body">
-                            <label for="">Fonction</label><br/>
-                            <label for="">Département</label><br/>
-                            <label for="">Email</label><br/>
-                            <label for="">Téléphone</label><br/>
-                            <button type="button" class="btn btn-primary">Éditer</button>
-                          </div>
-                        </div>
-                        </div>
-                      </div>
-                      <div class="col-2 offset-2">
-                            <div class="card" style="width : 22rem">
-                        <h4>NOM Prénom</h4>
-                        <div class="card" style="width : 22rem"></div>
-                        <div class="media">
-                          <img  src="app_photo.jpg" alt="Generic placeholder image">
-                          <div class="media-body">
-                            <label for="">Fonction</label><br/>
-                            <label for="">Département</label><br/>
-                            <label for="">Email</label><br/>
-                            <label for="">Téléphone</label><br/>
-                            <button type="button" class="btn btn-primary">Éditer</button>
-                          </div>
-                        </div>
-                          </div>
-                        </div>
-                     
-                      <div class="col-2 offset-2">
-                            <div class="card" style="width : 22rem">
-                        <h4>NOM Prénom</h4>
-                        <div class="card" style="width : 22rem"></div>
-                        <div class="media">
-                          <img  src="app_photo.jpg" alt="Generic placeholder image">
-                          <div class="media-body">
-                            <label for="">Fonction</label><br/>
-                            <label for="">Département</label><br/>
-                            <label for="">Email</label><br/>
-                            <label for="">Téléphone</label><br/>
-                            <button type="button" class="btn btn-primary">Éditer</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                        <table>
+          </div>
+        </div>
 
-                        </table>
-                    </div>
-                    <div class="row">
-                      <div class="col-2 offset-1">
-                            <div class="card" style="width : 22rem">
-                        <h4>NOM Prénom</h4>
-                        <div class="card" style="width : 22rem"></div>
-                        <div class="media">
-                          <img src="app_photo.jpg" alt="Generic placeholder image">
-                          <div class="media-body">
-                            <label for="">Fonction</label><br/>
-                            <label for="">Département</label><br/>
-                            <label for="">Email</label><br/>
-                            <label for="">Téléphone</label><br/>
-                            <button type="button" class="btn btn-primary">Éditer</button>
-                          </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-2 offset-2">
-                            <div class="card" style="width : 22rem">
-                        <h4>NOM Prénom</h4>
-                        <div class="card" style="width : 22rem"></div>
-                        <div class="media">
-                          <img src="app_photo.jpg" alt="Generic placeholder image">
-                          <div class="media-body">
-                            <label for="">Fonction</label><br/>
-                            <label for="">Département</label><br/>
-                            <label for="">Email</label><br/>
-                            <label for="">Téléphone</label><br/>
-                            <button type="button" class="btn btn-primary">Éditer</button>
-                          </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-2 offset-2">
-                            <div class="card" style="width : 22rem">
-                        <h4>NOM Prénom</h4>
-                        <div class="card" style="width : 22rem"></div>
-                        <div class="media">
-                          <img src="app_photo.jpg" alt="Generic placeholder image">
-                          <div class="media-body">
-                            <label for="">Fonction</label><br/>
-                            <label for="">Département</label><br/>
-                            <label for="">Email</label><br/>
-                            <label for="">Téléphone</label><br/>
-                            <button type="button" class="btn btn-primary">Éditer</button>
-                          </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-             
-                  </section>
+        <div class="col-2 offset-2">
+          <div class="card" style="width : 22rem">
+            <h4>NOM Prénom</h4>
+            <div class="card" style="width : 22rem"></div>
+            <div class="media">
+              <img src="app_photo.jpg" alt="Generic placeholder image">
+              <div class="media-body">
+                <label for="">Fonction</label>
+                <br/>
+                <label for="">Département</label>
+                <br/>
+                <label for="">Email</label>
+                <br/>
+                <label for="">Téléphone</label>
+                <br/>
+                <button type="button" class="btn btn-primary">Éditer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <table>
 
-        
+        </table>
+      </div>
+      <div class="row">
+        <div class="col-2 offset-1">
+          <div class="card" style="width : 22rem">
+            <h4>NOM Prénom</h4>
+            <div class="card" style="width : 22rem"></div>
+            <div class="media">
+              <img src="app_photo.jpg" alt="Generic placeholder image">
+              <div class="media-body">
+                <label for="">Fonction</label>
+                <br/>
+                <label for="">Département</label>
+                <br/>
+                <label for="">Email</label>
+                <br/>
+                <label for="">Téléphone</label>
+                <br/>
+                <button type="button" class="btn btn-primary">Éditer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 offset-2">
+          <div class="card" style="width : 22rem">
+            <h4>NOM Prénom</h4>
+            <div class="card" style="width : 22rem"></div>
+            <div class="media">
+              <img src="app_photo.jpg" alt="Generic placeholder image">
+              <div class="media-body">
+                <label for="">Fonction</label>
+                <br/>
+                <label for="">Département</label>
+                <br/>
+                <label for="">Email</label>
+                <br/>
+                <label for="">Téléphone</label>
+                <br/>
+                <button type="button" class="btn btn-primary">Éditer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 offset-2">
+          <div class="card" style="width : 22rem">
+            <h4>NOM Prénom</h4>
+            <div class="card" style="width : 22rem"></div>
+            <div class="media">
+              <img src="app_photo.jpg" alt="Generic placeholder image">
+              <div class="media-body">
+                <label for="">Fonction</label>
+                <br/>
+                <label for="">Département</label>
+                <br/>
+                <label for="">Email</label>
+                <br/>
+                <label for="">Téléphone</label>
+                <br/>
+                <button type="button" class="btn btn-primary">Éditer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
 
 
-               
+
+
+
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
 </html>
