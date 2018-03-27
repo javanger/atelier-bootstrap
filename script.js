@@ -54,7 +54,10 @@ var createCollaborateurProcess = event => {
       prenom: prenom,
       adresse: adresse,
       date: date,
-      numeroSecu: secu
+      numeroSecu: secu,
+      fonction: "inconnu",
+      departement: "inconnu",
+      telephone: "inconnu"      
     };
     addColab(collab, () => {
       redirectTo("editer-collab.html?secu=" + collab.numeroSecu);
@@ -107,8 +110,9 @@ var checkSecu = secu => {
     Initialise le local storage avec la structure de base
 */
 var initLocalStorage = () => {
-  if (!localStorage.getItem("app")) {
-    var app = {
+  var app = localStorage.getItem("app");
+  if (!app) {
+    app = {
       name: "SGP App",
       collaborateursList: [],
       statististiquesList: [],
@@ -116,6 +120,7 @@ var initLocalStorage = () => {
     };
     localStorage.setItem("app", JSON.stringify(app));
   }
+  return app;
 };
 
 /**
@@ -135,3 +140,4 @@ var addColab = (colab, callback) => {
 var redirectTo = page => {
   window.location.href = page;
 };
+
