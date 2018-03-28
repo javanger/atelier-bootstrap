@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activités</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row card">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand " href="logo.jpeg">
+                        <img src="logo.png" class="img-fluid max-width: 6rem" alt="LOGO">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Collaborateurs</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="statistiques.html">Statistiques</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="activites.html">Activités</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid">
+
+
+
+
+            <div class="row ">
+                <div class="col-10">
+                    <br>
+                    <h2 class="col-10">Activités depuis le démarrage de l'application</h2>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr class="table-dark">
+                                        <th class="col-4">Date/Heure</th>
+                                        <th class="col-8">Libellé</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table">
+                                        <td>10/10/2017 10:50:52</td>
+                                        <td>Création d'un nouveau collaborateur - matricule xxxxxxx
+                                            <a href="creer-collab.html">(lien)</a>
+                                        </td>
+
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td>10/05/2017 10:50:52</td>
+                                        <td>Modification d'un collaborateur - matricule xxxxxxx
+                                            <a href="editer-collab.html">(lien)</a>
+                                        </td>
+
+                                    </tr>
+                                    <tr class="table">
+                                        <td></td>
+                                        <td></td>
+
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td></td>
+                                        <td></td>
+
+                                    </tr>
+                                </tbody>
+                                <tr class="table">
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr class="table-active">
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                </tbody>
+                                <tr class="table">
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr class="table-active">
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                </tbody>
+                                <tr class="table">
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr class="table-active">
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        // si l'ur est creer-collab.html?errors 
+                        if (window.location.search == "?errors") {
+                            form.classList.add('was-validated');
+                        }
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+
+
+    </div>
+</body>
+
+
+
+</html>
