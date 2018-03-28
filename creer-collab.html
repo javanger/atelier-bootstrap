@@ -76,28 +76,28 @@
             <div class="col">Nom</div>
             <div class="form-group col-lg-6">
 
-                <input id="text" type="text" class="form-control" placeholder="Le nom est obligatoire" required>
+                <input id="nom" type="text" class="form-control" placeholder="Le nom est obligatoire" required>
             </div>
         </div>
         <div class="row">
             <div class="col">Prénom</div>
             <div class="form-group col-lg-6">
 
-                <input id="text" type="text" class="form-control" placeholder="Le prénom est obligatoire" required>
+                <input id="prenom" type="text" class="form-control" placeholder="Le prénom est obligatoire" required>
             </div>
         </div>
         <div class="row">
             <div class="col">Date de naissance</div>
             <div class="form-group col-lg-6">
 
-                <input id="text" type="text" class="form-control" placeholder="La date de naissance est obligatoire" required>
+                <input id="dateNaissance" type="text" class="form-control" placeholder="La date de naissance est obligatoire" required>
             </div>
         </div>
         <div class="row">
             <div class="col">Adresse</div>
             <div class="form-group col-lg-6">
 
-                <textarea name="" id="textare" cols="18" rows="5" class="form-control" placeholder="L'adresse est obligatoire" required></textarea>
+                <textarea name="" id="adresse" cols="18" rows="5" class="form-control" placeholder="L'adresse est obligatoire" required></textarea>
             </div>
         </div>
         <div class="row">
@@ -105,7 +105,7 @@
 
             <div class="form-group col-lg-6">
 
-                <input id="text" type="text" class="form-control" placeholder="Le numéro de sécurité social est obligatoire" required>
+                <input id="numSecu" type="text" class="form-control" placeholder="Le numéro de sécurité social est obligatoire" required>
             </div>
         </div>
         <div class="row">
@@ -158,7 +158,7 @@
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-dark" data-dismiss="modal">annuler</button>
-                        <button type="button" class="btn btn-dark">confirmer</button>
+                        <input type="submit" id="confirmer" name="confirmer" class="btn btn-dark">confirmer</input>
                     </div>
                 </div>
             </div>
@@ -205,6 +205,38 @@
                     });
                 }, false);
             })();
+
+            // Méthode de stockage
+            document.getElementById('confirmer').onclick = function () {
+                if (typeof localStorage != 'undefined') {
+                    var sauvegarde = {
+                        nom: document.getElementById('nom').value,
+                        prenom: document.getElementById('prenom').value,
+                        dateNaissance: document.getElementById('dateNaissance').value,
+                        adresse: document.getElementById('adresse').value,
+                        numSecu: document.getElementById('numSecu').value,
+                    };
+                    localStorage.setItem('coord', JSON.stringify(sauvegarde));
+                    alert("Mémorisation effectuée");
+                } else alert("localStorage n'est pas supporté");
+            };
+
+            // Méthode de lecture
+            document.getElementById('lecture').onclick = function () {
+                if (typeof localStorage != 'undefined') {
+                    var sauvegarde = JSON.parse(localStorage.getItem('coord'));
+                    document.getElementById('nom').value = sauvegarde.nom;
+                    document.getElementById('prenom').value = sauvegarde.prenom;
+                    document.getElementById('dateNaissance').value = sauvegarde.dateNaissance;
+                    document.getElementById('adresse').value = sauvegarde.adresse;
+                    document.getElementById('numSecu').value = sauvegarde.numSecu;
+
+                    alert("Lecture effectuée");
+                } else alert("localStorage n'est pas supporté");
+            };
+
+
+
         </script>
 
 
