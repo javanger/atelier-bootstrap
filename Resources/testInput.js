@@ -58,7 +58,7 @@ if(document.querySelector('#modalValider') != null){
 
     var value = JSON.stringify({nom : nom, prenom : prenom, 
       dateNaissance : dateNaissance, adresse : adresse, 
-      numeroSecuSocial : numeroSecuSocial, fonction : "PDG", departement : "Ressource Humaines", tel : "0644571827"});
+      numeroSecuSocial : numeroSecuSocial});
       
     localStorage.setItem(numeroSecuSocial, value);
   });
