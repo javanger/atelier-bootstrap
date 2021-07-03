@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <style>
+  </style>
+  <title>Acceuil</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- Menu de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">LOG</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Collaborateurs
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./stats.html">Statistiques</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./activités.html">Activités</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="mx-5">
+
+      <div class="row">
+        <div class="col-lg-9"></div>
+        <div class="col-12 col-lg-1">
+          <a href="./creer-collab.html" class="btn btn-primary mt-3">Ajouter un nouveau collaborateur</a>
+        </div>
+      </div>
+      <h1>Les collaborateurs</h1>
+
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          Rechercher un nom ou un prénom qui commence par :
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="recherche" aria-label="" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">Rechercher</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Voir les collaborateurs désactivés</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          Filtrer par département :
+        </div>
+        <div class="col-12 col-lg-4">
+          <select class="custom-select">
+            <option selected>Tous</option>
+            <option value="1">Comptabilité</option>
+            <option value="2">Ressources Humaines</option>
+            <option value="3">Informatique</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="mx-5 mt-5">
+      <div class="row">
+        <div class="col-12 col-mb-6 col-lg-4">
+          <div class="card bg-light mb-3">
+            <div class="card-header">NOM Prénom</div>
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="card-body">
+                  <img src="app_photo.jpg" class="rounded mx-auto d-block mt-2" alt="...">
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <div class="row">
+                      <div class="col-6">Fonction:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Département:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Email:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Téléphone:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <a href="./editer-collab.html" class="btn btn-primary mt-3">Editer</a>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-mb-6 col-lg-4">
+          <div class="card bg-light mb-3">
+            <div class="card-header">NOM Prénom</div>
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="card-body">
+                  <img src="app_photo.jpg" class="rounded mx-auto d-block mt-2" alt="#">
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <div class="row">
+                      <div class="col-6">Fonction:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Département:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Email:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Téléphone:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <a href="./editer-collab.html" class="btn btn-primary mt-3">Editer</a>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-mb-6 col-lg-4">
+          <div class="card bg-light mb-3">
+            <div class="card-header">NOM Prénom</div>
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="card-body">
+                  <img src="app_photo.jpg" class="rounded mx-auto d-block mt-2" alt="#">
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <div class="row">
+                      <div class="col-6">Fonction:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Département:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Email:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Téléphone:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <a href="./editer-collab.html" class="btn btn-primary mt-3">Editer</a>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-mb-6 col-lg-4">
+          <div class="card bg-light mb-3">
+            <div class="card-header">NOM Prénom</div>
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="card-body">
+                  <img src="app_photo.jpg" class="rounded mx-auto d-block mt-2" alt="#">
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <div class="row">
+                      <div class="col-6">Fonction:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Département:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Email:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Téléphone:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <a href="./editer-collab.html" class="btn btn-primary mt-3">Editer</a>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-mb-6 col-lg-4">
+          <div class="card bg-light mb-3">
+            <div class="card-header">NOM Prénom</div>
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="card-body">
+                  <img src="app_photo.jpg" class="rounded mx-auto d-block mt-2" alt="#">
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <div class="row">
+                      <div class="col-6">Fonction:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Département:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Email:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Téléphone:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <a href="./editer-collab.html" class="btn btn-primary mt-3">Editer</a>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-mb-6 col-lg-4">
+          <div class="card bg-light mb-3">
+            <div class="card-header">NOM Prénom</div>
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="card-body">
+                  <img src="app_photo.jpg" class="rounded mx-auto d-block mt-2" alt="#">
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    <div class="row">
+                      <div class="col-6">Fonction:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Département:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Email:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Téléphone:</div>
+                      <div class="col-6">************</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                      </div>
+                      <div class="col-12 col-lg-3">
+                        <a href="./editer-collab.html" class="btn btn-primary mt-3">Editer</a>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
